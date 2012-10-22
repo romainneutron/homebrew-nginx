@@ -126,11 +126,11 @@ class Nginx12 < Formula
     end
 
     if build.include? 'with-pcre'
-      args << "--with-http_pcre"
+      args << "--with-pcre"
     end
 
     if build.include? 'with-ipv6'
-      args << "--with-http_ipv6"
+      args << "--with-ipv6"
     end
 
     system "./configure", *args
